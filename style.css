@@ -11,20 +11,6 @@ body {
     text-align: center;
 }
 
-.skip-link {
-    position: absolute;
-    left: -1000px;
-    top: 10px;
-    background: #000;
-    color: #fff;
-    padding: 8px;
-    text-decoration: none;
-}
-
-.skip-link:focus {
-    left: 10px;
-}
-
 header {
     background-color: #0057b8;
     color: white;
@@ -100,4 +86,45 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+}
+
+/* Dark Mode Styles */
+.dark-mode {
+    background-color: #222;
+    color: #f4f4f4;
+}
+
+.dark-mode .introduction,
+.dark-mode .game-list li,
+.dark-mode .vision {
+    background-color: #333;
+    color: white;
+}
+
+#dark-mode-btn {
+    display: flex;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background: #fff;
+    color: #0057b8;
+    border: 2px solid #0057b8;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#dark-mode-btn:hover {
+    background: #0057b8;
+    color: white;
+}
+
+.dark-mode #dark-mode-btn {
+    background: #222;
+    color: white;
+    border: 2px solid white;
+}
+
+.dark-mode #dark-mode-btn:hover {
+    background: white;
+    color: #222;
 }
