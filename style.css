@@ -11,6 +11,52 @@ body {
     text-align: center;
 }
 
+.navbar {
+    background: #0057b8;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-btn {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.menu li {
+    margin: 5px 0;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    transition: 0.3s;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.menu a:hover {
+    background: #003f7f;
+}
+
 header {
     background-color: #0057b8;
     color: white;
@@ -62,6 +108,31 @@ header {
     border-radius: 10px;
     margin-top: 10px;
 }
+
+.awards {
+    background: #eee;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.awards ul {
+    list-style: none;
+}
+
+.awards li {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.community {
+    padding: 20px;
+    background: #fff;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
 
 .vision {
     margin: 30px;
@@ -127,4 +198,59 @@ footer a:hover {
 .dark-mode #dark-mode-btn:hover {
     background: white;
     color: #222;
+}
+
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .game-list ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .game-list li {
+        width: 90%;
+    }
+
+    .about, .awards, .community, .testimonials, .contact {
+        width: 95%;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        background: #0057b8;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    .game-list li {
+        width: 100%;
+        height: auto;
+    }
+
+    .contact input, .contact textarea {
+        width: 90%;
+    }
 }

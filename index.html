@@ -7,21 +7,32 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <nav class="navbar">
+        <button id="menu-toggle" class="menu-btn">☰</button>
+        <ul id="menu" class="menu">
+            <li><a href="#about">About</a></li>
+            <li><a href="#games">Games</a></li>
+            <li><a href="#awards">Awards</a></li>
+            <li><a href="#community">Community</a></li>
+            <li><a href="#vision">Vision</a></li>
+        </ul>
+    </nav>
+
     <header>
         <h1>Welcome to miHoYo</h1>
         <img src="https://upload.wikimedia.org/wikipedia/en/3/32/MiHoYo_Logo.png" alt="miHoYo Logo" class="logo">
-        <button id="dark-mode-btn">Toggle Dark Mode</button>
+        <li><button id="dark-mode-btn">🌙 Toggle Dark Mode</button></li>
     </header>
 
     <main id="main-content">
-        <section class="introduction">
+        <section class="introduction" id="about">
             <p>
                 miHoYo is one of the most popular game development companies specializing in anime-style mobile games.<br>
                 The company is headquartered in China, with an additional branch, HoYoverse, in Japan.
             </p>
         </section>
 
-        <section class="game-list">
+        <section class="game-list" id="games">
             <h2>Game List</h2>
             <ul>
                 <li>
@@ -55,7 +66,21 @@
             </ul>
         </section>
 
-        <section class="vision">
+        <section class="awards" id="awards">
+            <h2>Awards & Recognition</h2>
+            <ul>
+                <li>🏆 2020 - Genshin Impact won the **Best Mobile Game** at The Game Awards</li>
+                <li>🏆 2021 - Honkai Impact 3rd featured in Apple’s **Best of the Year** list</li>
+                <li>🏆 2022 - miHoYo recognized for outstanding innovation in gaming</li>
+            </ul>
+        </section>
+
+        <section class="community" id="community">
+            <h2>Our Global Community</h2>
+            <p>With millions of players worldwide, miHoYo games have built one of the strongest online gaming communities.</p>
+        </section>
+
+        <section class="vision" id="vision">
             <h2>miHoYo's Vision</h2>
             <h4>"Tech Otakus Save the World"</h4> 
         </section>

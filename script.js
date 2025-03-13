@@ -24,3 +24,11 @@ document.querySelectorAll(".game-list li").forEach((card) => {
         card.style.transform = "scale(1)";
     });
 });
+
+// Toggle menu on button click
+const menuToggle = document.getElementById("menu-toggle");
+const menu = document.getElementById("menu");
+
+menuToggle.addEventListener("click", function () {
+    menu.classList.toggle("active");
+});
